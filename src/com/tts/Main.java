@@ -77,12 +77,17 @@ public class Main {
         }
         System.out.println("What is the first name of your favorite actor or actress?");
         String favAct = input.next();
-        int actNum = favAct.charAt(0);
 
-        int ranNum = Math.random() > 0.5 ? luckyNumber : inputNumber;
+        int ranNum = Math.random() > 0.2 ? luckyNumber : inputNumber;
+
+
+        int finalCarInt =  carInt + luckyNumber;
+        int finalPetNumInt = favPet.charAt(2);;
+        int finalPetAgeInt  = petAge + carInt;
+        int finalActNumInt = favAct.charAt(0); ;
 
         int magicBall = luckyNumber * inputNumber;
-        System.out.println("Your lotto numbers are: " + carInt + " " + petNum + " " + petAge+ " " + ranNum + " " + actNum + " " + " Magic Ball:" + magicBall  );
+        System.out.println("Your lotto numbers are: " + finalCarInt + " " + finalPetNumInt + " " + finalPetAgeInt+ " " + ranNum + " " + finalActNumInt + " " + " Magic Ball:" + magicBall  );
 
 
 
